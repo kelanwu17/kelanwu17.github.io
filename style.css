@@ -1,25 +1,59 @@
 @font-face {
-    
-    src: url("fonts/JlsdatagothicRnc-9yDB.otf");
-    font-family: data;
+    src: url("fonts/Gepestev-nRJgO.ttf");
+    font-family: Gepestev;
+}
+@font-face {
+    src: url("fonts/Blanka-Regular.ttf");
+    font-family: Blanka;
+}
+h1, h2, h3, p{
+    color:white;
 }
 
-.navigation {
-    background-color: blue;
-}
 
 #topbar {
     list-style-type: none;
     margin:0;
     padding: 0;
-    
+    overflow: hidden;
     
 }
-#topbarfont {
-    font-family: data;
-    font-size: 30px;
+#topbarfont {   
+    float: left;
+}
+#topbarfont a{
+    font-family: Gepestev;
+    font-size: 20px;
     display:block;
     text-align: center;
-    float: left;
     padding: 14px 16px;
+    text-decoration:none;
+    color: white;
+    font-weight: lighter;
+}
+#topbarfont #kelan{
+    font-size: 40px;
+}
+#topbarfont a:hover {
+    color:orange;
+}
+#Welcome {
+    background-image: url("images/ey29Qkq.png");
+}
+#Welcome h3 {
+    text-align: center;
+    font-family: Gepestev;
+}
+
+#Name {
+    font-family: Blanka;
+    font-size: 80px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-align: center;
+    
+    
+
+    
 }
