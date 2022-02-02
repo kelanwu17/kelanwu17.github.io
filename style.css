@@ -39,12 +39,15 @@ h1, h2, h3, p{
 }
 #Welcome {
     background-image: url("images/shape.gif");
+    background-repeat: round;
     height: 800px;
+    width: auto;
 }
 #Welcome h3 {
     text-align: center;
     font-family: Gepestev;
     position:relative; top:250px;
+    
 }
 
 #Name {
