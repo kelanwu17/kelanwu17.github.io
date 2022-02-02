@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    background:transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 97, 97);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
 @font-face {
     src: url("fonts/Gepestev-nRJgO.ttf");
     font-family: Gepestev;
@@ -9,14 +22,11 @@
 h1, h2, h3, p{
     color:white;
 }
-
-
 #topbar {
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
-    
 }
 #topbarfont {   
     float: left;
@@ -47,9 +57,7 @@ h1, h2, h3, p{
     text-align: center;
     font-family: Gepestev;
     position:relative; top:250px;
-    
 }
-
 #Name {
     font-family: Blanka;
     font-size: 100px;
@@ -58,8 +66,28 @@ h1, h2, h3, p{
     letter-spacing: 15px;
     text-align: center;
     position:relative; top:280px;
+}
+.box {
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0);
+    padding: 50px;
+    background-color: rgb(189, 189, 189);
+}
+.desFont {
+    font-family: Gepestev;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-align: center;
     
+}
+.pFont {
+    font-family: Gepestev;
+    font-size: 22px;
+    border-style: solid;
+    padding: 50px;
+    margin-right: 900px;
     
 
-    
 }
