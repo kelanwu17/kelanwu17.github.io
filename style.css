@@ -1,14 +1,11 @@
+* {
+    margin:0;
+    padding:0;
+}
 html {
     scroll-behavior: smooth;
 }
-#noNav {
-    text-align: center;
-    max-width: 1920px;
-    min-width: 500px;
-    box-sizing: border-box;
-    margin-left:12%;
-    margin-right:12%;
-}
+
 body::-webkit-scrollbar {
     width: 5px;
 }
@@ -27,7 +24,7 @@ body::-webkit-scrollbar-thumb {
     src: url("fonts/Blanka-Regular.ttf");
     font-family: Blanka;
 }
-h1, h2, h3, p{
+h1, h2, h3{
     color:white;
 }
 #topbar {
@@ -35,6 +32,7 @@ h1, h2, h3, p{
     margin:0;
     padding: 0;
     overflow: hidden;
+    display:none;
 }
 #topbarfont {   
     float: left;
@@ -57,7 +55,7 @@ h1, h2, h3, p{
 }
 #Welcome {
     background-image: url("images/shape.gif");
-    background-repeat: round;
+    background-repeat:no-repeat;
     height: 800px;
     width: auto;
     position:relative;
@@ -65,45 +63,132 @@ h1, h2, h3, p{
 #Welcome h3 {
     text-align: center;
     font-family: Gepestev;
-    position:absolute; top:52%; left:35%;
+    font-size: 120%;
+    position:relative; top:380px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #Name {
     font-family: Blanka;
-    font-size: 550%;
+    font-size: 400%;
     color: whitesmoke;
     font-weight: bold;
     letter-spacing:15px;
     text-align: center;
-    position:absolute; top:28%; left:29%;
-    display:flex;
+    position:relative; top:320px; left:10px;
+    
+    
 }
 .box {
-    border-style:solid;
-    border-width: 1px;
-    border-radius: 50px;
-    box-shadow: rgb(0, 0, 0);
-    padding: 50px;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(37.5, 37.5, 37.5);
+    border-top: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+
 }
 .desFont {
+    color: white;
     font-family: Gepestev;
     font-size: 35px;
     letter-spacing: 5px;
     text-align: center;
+    padding: 25px;
     
 }
 .pFont {
-    font-family: Gepestev;
-    font-size: 22px;
-    border-style: solid;
-    padding: 50px;
-    max-width: 900px;
+    font-family: Helvetica;
+    font-size: 16px;
+    padding: 0px 30px 20px; 
+    color:white;
+    line-height: 28px;
 }
-.fa-github {
-    color:rgb(255, 255, 255);
-    position: absolute; left: 30%; top:65%;
+.socials i{
+    border-style: solid;
+    border-radius: 10px;
+    padding:10px;
+    background-color:rgb(44, 44, 44);
     
 }
-.fa-github:hover {
-    color: #9b69d4;
+
+.fa-github-alt {
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    width: auto;
+    height:auto;
+    text-align: center;
+    position: relative; top:440px; right:50px;
+    
+}
+.fa-github-alt:hover {
+    color: #a250ff;
+}
+.fa-linkedin-in {
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    width: auto;
+    height:auto;
+    text-align: center;
+    position: relative; top:440px;
+}
+.fa-linkedin-in:hover {
+    color: #2d70ff;
+}
+.fa-instagram {
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    width: auto;
+    height:auto;
+    text-align: center;
+    position: relative; top:440px; left:50px;
+}
+.fa-instagram:hover {
+    color: #ff57d5;
+}
+
+/* small screens ex. iphone 6 */
+@media only screen and (min-width: 412px) {
+
+}
+/* medium screens ex. iphone 7 plus & iphone XR */
+@media only screen and (min-width: 768px) {
+    #topbar {
+        display:block;
+        width:100%;
+    }
+    #Welcome {
+        background-repeat:round;
+    }
+    #Name {
+        font-size:500%;
+    }
+    .desFont {
+        font-size: 50px;
+    }
+    .pFont {
+        font-size:20px;
+        padding: 10px 50px 30px; 
+    }
+    .box {
+        margin: 0% 10%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    #Welcome {
+        margin: 0% 10%;
+    }
+    .desFont {
+        padding: 50px;
+        font-size: 70px;
+    }
+    .pFont {
+        font-size:22px;
+        line-height:30px;
+    }
+}
+@media only screen and (min-width: 1921px) {
+    #Welcome {
+        margin: 0% 20%;
+    }
+    .box {
+        margin: 0% 20%;
+    }
 }
