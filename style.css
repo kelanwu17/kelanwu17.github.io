@@ -146,8 +146,8 @@ h1, h2, h3{
 }
 #preloader {
     background: rgb(27, 27, 27) url("images/preloader.gif") no-repeat center center;
-    background-size: 10%;
-    height: 100vh;
+    background-size: 30%;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -155,7 +155,7 @@ h1, h2, h3{
 }
 /* small screens ex. iphone 6 */
 @media only screen and (min-width: 412px) {
-
+    
 }
 /* medium screens ex. iphone 7 plus & iphone XR */
 @media only screen and (min-width: 768px) {
@@ -194,6 +194,9 @@ h1, h2, h3{
     .pFont {
         font-size:22px;
         line-height:30px;
+    }
+    #preloader {
+        background-size: 10%;
     }
 }
 @media only screen and (min-width: 1921px) {
