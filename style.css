@@ -48,9 +48,7 @@ h1, h2, h3{
     color: white;
     font-weight: lighter;
 }
-#topbarfont #kelan{
-    font-size: 200%;
-}
+
 #topbarfont a:hover {
     color:orange;
 }
@@ -71,7 +69,7 @@ h1, h2, h3{
 }
 #Name {
     font-family: Blanka;
-    font-size: 400%;
+    font-size: 00%;
     color: whitesmoke;
     font-weight: bold;
     letter-spacing:15px;
@@ -89,7 +87,7 @@ h1, h2, h3{
 .desFont {
     color: white;
     font-family: Gepestev;
-    font-size: 35px;
+    font-size: 10px;
     letter-spacing: 5px;
     text-align: center;
     padding: 25px;
@@ -101,6 +99,7 @@ h1, h2, h3{
     padding: 0px 30px 20px; 
     color:white;
     line-height: 28px;
+    text-align: center;
 }
 .socials i{
     border-style: solid;
