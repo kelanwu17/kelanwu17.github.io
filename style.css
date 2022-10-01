@@ -28,12 +28,19 @@ body::-webkit-scrollbar-thumb {
 h1, h2, h3{
     color:white;
 }
+
+.navigation {
+    background-color: rgb(69, 188, 204);
+    
+}
+
 #topbar {
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
     display:none;
+    
 }
 #topbarfont {   
     float: left;
@@ -45,7 +52,7 @@ h1, h2, h3{
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
-    color: white;
+    color: black;
     font-weight: lighter;
 }
 
@@ -80,26 +87,30 @@ h1, h2, h3{
 }
 .box {
     background-color: rgb(37.5, 37.5, 37.5);
-    border-top: 1px solid rgb(204, 204, 204);
+    
     border-radius: 10px;
 
 }
 .desFont {
     color: white;
     font-family: Gepestev;
-    font-size: 10px;
+    font-size: 30px;
     letter-spacing: 5px;
-    text-align: center;
+    text-align: left;
     padding: 25px;
     
 }
 .pFont {
     font-family: Helvetica;
-    font-size: 16px;
     padding: 0px 30px 20px; 
     color:white;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
+}
+.pFont p {
+    font-size:20px;
+    font-family:Gepestev;
+
 }
 .socials i{
     border-style: solid;
@@ -152,6 +163,20 @@ h1, h2, h3{
     z-index: 100;
 
 }
+
+
+.float-container-child {
+    width: 50%;
+    float: left;
+    
+}
+#uh-logo {
+    max-width: 55%;
+    height: auto;
+    float:right;
+    
+}
+
 /* small screens ex. iphone 6 */
 @media only screen and (min-width: 412px) {
     
@@ -188,7 +213,7 @@ h1, h2, h3{
     }
     .desFont {
         padding: 50px;
-        font-size: 70px;
+        font-size: 50px;
     }
     .pFont {
         font-size:22px;
