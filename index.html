@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kelan Wu Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/54d2d7cb9e.js" crossorigin="anonymous"></script>
     
   </head>
@@ -14,62 +16,101 @@
   <body style="background-color: rgb(37.5, 37.5, 37.5);">
     <div id="preloader"></div>
         
-            <nav class="navigation">
-                <div ></div>
-                    <ul id="topbar">
-                        <li id="topbarfont">
-                            <a id="kelan" href=#Welcome>Kelan Wu</a>
-                        </li>
-                        <li id="topbarfont">
-                            <a href=#About>About</a>
-                        </li>
-                        <li id="topbarfont">
-                            <a href=#Experiences>Experiences</a>
-                        </li>
-                        <li id="topbarfont">
-                            <a href=#Projects>Projects</a>
-                        </li>
-                    </ul>  
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-sm navbar-light navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand topbarfont" href="#" >Kelan Wu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="navbar-brand topbarfont">
+                <a class="nav-link active" aria-current="page" href="#About">About Me</a>
+              </li>
+              <li class="navbar-brand topbarfont">
+                <a class="nav-link active" href="#">Experience</a>
+              </li>
+              <li class="navbar-brand topbarfont">
+                <a class="nav-link active"  href="#">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="homepage">
+      <div class="container-lg">
+        <div class="row justify-content-evenly">
+          <div class="col"><img src="images\shape.gif" class ="rounded mx-auto d-block"></div>
+          <div class="col d-none d-xxl-block"><img src="images\shape.gif" class ="rounded"></div>
+          <div class="col d-none d-xxl-block"><img src="images\shape.gif" class ="rounded"></div>
+        </div>
+        <!-- Big Name -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 justify-content-center" id="Welcome">
+            <h1 class="display-1"><span class="text-large text-nowrap">Kelan Wu</span></h1>
+          </div>
+        </div>
+        <br>
+        <!-- Home Description -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 d-flex justify-content-center">
+            <h3 id="Description">
+              CS Junior at  <span style="color: red;" class="text-nowrap">the University of Houston</span>
+            </h3>
+          </div>
+        </div>  
+      </div>
+
+      <br>
+      <!-- Social Icons -->
+      <div class="container-xs">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-auto"><a href="https://github.com/kelanwu17" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a></div>
+          <div class="col-lg-auto">
+            <a href="https://www.linkedin.com/in/kelan-wu-b316ba201/"   target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+          </div>
+          <div class="col-lg-auto">
+            <a href="https://www.instagram.com/kelanwu_/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- About Section -->
+    <section id="About">
+      <div class="container-lg">
+        <div class="row ">
+          <h2 class="desFont">About Me</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col pFont"><p> Hi! My name is Kelan Wu and I am a <s>Sophomore</s> Junior majoring in Computer Science at the University of Houston. I was initially majoring in Pre-Business, however after learning about the facinating world of tech, I made the switch in the middle of my sophomore year and haven't looked back since!</p>
+          <br>
+          <br>
+          <a href="files\Resume 9072022.pdf" target="_none" class="resume-button">Resume</a>
+          </div>
+          
+          <div class="col-md-auto"><img src="images\University_of_Houston_seal.svg.png" id="uh-logo"></div>
+        </div>
+        
+      </div>
+
+    </section>
+        
             
-                <div id = "Welcome">
-                    <h1 id="Name">Kelan Wu</h1>
-                    <div>
-                        <h3 id="Description">
-                            CS Junior at  <span style="color: red;">the University of Houston</span>
-                        </h3>
-                        <center>
-                            <div class="socials">
-                                <a href="https://github.com/kelanwu17" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a>
-
-                                <a href="https://www.linkedin.com/in/kelan-wu-b316ba201/"   target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
-
-                                <a href="https://www.instagram.com/kelanwu_/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                            </div>
-                        </center>    
-                    </div>
-                </div>
-                
-                <div class="box">
-                        <div  id="About">
-                            <h2 class="desFont">About</h2>
-                            <div class="float-container-about">
-                                <div class = "float-container-child">
-                                    <div class="pFont">
-                                        <p> Hi! My name is Kelan Wu and I am a <s>Sophomore</s> Junior majoring in Computer Science at the University of Houston. I was initially majoring in Pre-Business, however after learning about the facinating world of tech, I made the switch in the middle of my sophomore year and haven't looked back since!</p>
-                                        <br>
-                                        <a class="btn fourth" href="files\Resume 9072022.pdf" target="_blank" > Resume</a>
-                                    </div>
-                                    
-                                </div>
     
-                                <div class="float-container-child"><img src="images\University_of_Houston_seal.svg.png" id="uh-logo"></div>
-                                
-                            </div>
-                                
-                        </div>
-                </div>
+        
+
+                
+             
 
                 
 

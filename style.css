@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -42,29 +43,31 @@ h1, h2, h3{
     display:none;
     
 }
-#topbarfont {   
+
+.topbarfont {
     float: left;
-}
-#topbarfont a{
     font-family: Gepestev;
     font-size: 20px;
-    display:block;
     text-align: center;
-    padding: 14px 16px;
+    padding-right:10px;
     text-decoration:none;
     color: black;
     font-weight: lighter;
 }
 
-#topbarfont a:hover {
+.nav-link:hover {
     color:orange;
 }
+
 #Welcome {
-    background-image: url("images/shape.gif");
-    background-repeat:no-repeat;
-    height: 800px;
-    width: auto;
-    position:relative;
+    font-family: Blanka;
+    color: whitesmoke;
+    letter-spacing:12px;
+}
+.text-large {
+    font-size:120%;
+    text-align: center;
+    
 }
 #Welcome h3 {
     text-align: center;
@@ -97,22 +100,22 @@ h1, h2, h3{
     font-size: 30px;
     letter-spacing: 5px;
     text-align: left;
-    padding: 25px;
+    
     
 }
 .pFont {
-    font-family: Helvetica;
-    padding: 0px 30px 20px; 
+    font-family: Gepestev;
+     
     color:white;
     line-height: 28px;
     text-align: left;
 }
 .pFont p {
     font-size:20px;
-    font-family:Gepestev;
+    
 
 }
-.socials i{
+ i{
     border-style: solid;
     border-radius: 10px;
     padding:10px;
@@ -122,36 +125,39 @@ h1, h2, h3{
 
 .fa-github-alt {
     color:rgb(255, 255, 255);
-    display: inline-block;
+    
     width: auto;
     height:auto;
     text-align: center;
-    position: relative; top:440px; right:50px;
+   
     
 }
 .fa-github-alt:hover {
+    transition-duration: 250ms;
     color: #a250ff;
 }
 .fa-linkedin-in {
     color:rgb(255, 255, 255);
-    display: inline-block;
+    
     width: auto;
     height:auto;
     text-align: center;
-    position: relative; top:440px;
+    
 }
 .fa-linkedin-in:hover {
+    transition-duration:250ms;
     color: #2d70ff;
 }
 .fa-instagram {
     color:rgb(255, 255, 255);
-    display: inline-block;
+    
     width: auto;
     height:auto;
     text-align: center;
-    position: relative; top:440px; left:50px;
+    
 }
 .fa-instagram:hover {
+    transition-duration:250ms;
     color: #ff57d5;
 }
 #preloader {
@@ -163,54 +169,23 @@ h1, h2, h3{
     z-index: 100;
 
 }
+.resume-button {
+    border-style:solid;
+    padding:8px 20px;
+    background-color:orange;
+    color:black;
+    border-color: orange;
+    text-decoration:none;
+}
 
-.btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: transparent;
-    border: 2px solid #e74c3c;
-    border-radius: 0.6em;
-    color: #e74c3c;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin-top: 10px;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-right : 0px;
-  }
-  .btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
-  }
-.fourth {
-    border-color: #cfa723;
-    color: #fff;
-    background-image: -webkit-linear-gradient(45deg, #cfa723 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #cfa723 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    -webkit-transition: background 400ms ease-in-out;
-    transition: background 400ms ease-in-out;
-  }
-  .fourth:hover {
-    background-position: 0;
-  }
-  
+.resume-button:hover {
+    transition-duration:250ms;
+    color:orange;
+    background-color:transparent;
+    
+    
+
+}
 .float-container-child {
     width: 50%;
     float: left;
@@ -226,7 +201,7 @@ h1, h2, h3{
 }
 
 /* small screens ex. iphone 6 */
-@media only screen and (min-width: 412px) {
+/* @media only screen and (min-width: 412px) {
     .btn{
         margin-right: 0px;
     }
@@ -290,7 +265,7 @@ h1, h2, h3{
     .btn{
         margin-right: 500px;
     }
-}
+} */
 
 
 
