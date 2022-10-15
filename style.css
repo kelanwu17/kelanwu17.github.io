@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -103,6 +104,9 @@ h1, h2, h3{
     
     
 }
+#Projects .desFont {
+    text-align:center;
+}
 .pFont {
     font-family: Gepestev;
      
@@ -176,6 +180,7 @@ h1, h2, h3{
     color:black;
     border-color: orange;
     text-decoration:none;
+    border-radius: 20px;
 }
 
 .resume-button:hover {
