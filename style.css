@@ -199,10 +199,16 @@ h1, h2, h3{
     
 }
 #uh-logo {
-    max-width: 350px;
+    max-width: 500px;
     height: auto;
     float:right;
-    
+    border-style: solid;
+    border-radius: 40px;
+    border-color: rgb(127, 209, 201);
+    margin-left:200px;
+}
+.tech-list {
+    list-style-type: none;
 }
 
 /* small screens ex. iphone 6 */
