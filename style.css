@@ -211,6 +211,13 @@ h1, h2, h3{
     list-style-type: none;
 }
 
+
+.project-box {
+    box-shadow:15px 15px #c09d51;
+}
+
+
+
 /* small screens ex. iphone 6 */
 /* @media only screen and (min-width: 412px) {
     .btn{
